@@ -1,0 +1,10 @@
+from seantis.dir.base import directory
+from seantis.dir.base.interfaces import IDirectory
+
+
+class I${directory_name}Directory(IDirectory):
+    pass
+
+
+class ${directory_name}Directory(directory.Directory):
+    pass

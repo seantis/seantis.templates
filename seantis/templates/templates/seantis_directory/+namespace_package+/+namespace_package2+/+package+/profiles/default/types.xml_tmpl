@@ -1,0 +1,4 @@
+<object name="portal_types">
+    <object name="${project}.directory" meta_type="Dexterity FTI" />
+    <object name="${project}.item" meta_type="Dexterity FTI" />
+</object>
