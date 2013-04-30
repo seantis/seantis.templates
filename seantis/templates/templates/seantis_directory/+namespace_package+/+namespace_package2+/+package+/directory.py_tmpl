@@ -1,3 +1,6 @@
+from five import grok
+from plone.app.layout.viewlets.interfaces import IBelowContentTitle
+
 from seantis.dir.base import directory
 from seantis.dir.base.interfaces import IDirectory
 
@@ -8,3 +11,12 @@ class I${directory_name}Directory(IDirectory):
 
 class ${directory_name}Directory(directory.Directory):
     pass
+
+
+class KitaDirectoryHeader(grok.Viewlet):
+    grok.context(I${directory_name}Directory)
+    grok.name('${project}.directory-info')
+    grok.require('zope2.View')
+    grok.viewletmanager(IBelowContentTitle)
+
+    template = grok.PageTemplateFile('templates/directory-info.pt')
