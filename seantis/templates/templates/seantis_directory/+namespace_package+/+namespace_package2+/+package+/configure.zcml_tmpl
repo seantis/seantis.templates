@@ -36,6 +36,6 @@
         for="Products.CMFPlone.interfaces.IPloneSiteRoot" 
         />
 
-    <browser:resourceDirectory name="seantis.dir.facility.css" directory="css"/>
+    <browser:resourceDirectory name="${project}.css" directory="css"/>
 
 </configure>
