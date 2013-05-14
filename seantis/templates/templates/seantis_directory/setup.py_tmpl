@@ -30,7 +30,7 @@ setup(
     zip_safe=${repr(bool($zip_safe)) or False},
     install_requires=[
         'setuptools',
-        'seantis.dir.base>=1.4'
+        'seantis.dir.base>=1.5'
         # -*- Extra requirements: -*-
     ],
     entry_points="""
